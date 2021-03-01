@@ -1,0 +1,604 @@
+html{
+     scroll-behavior: smooth !important;
+     
+}
+::-webkit-scrollbar {
+     width: 11px;
+     height: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+     background: linear-gradient(13deg, #24042b 14%, gold 64%);
+     border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+     background: linear-gradient(13deg, gold 14%, #1f093e 64%);
+}
+
+::-webkit-scrollbar-track {
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+
+/*........HOME......PAGE..............CSS............*/
+
+nav{
+     background-image: linear-gradient(to right top, #001253, #1f093e, #24042b, #22021c, #1a0010, #150713, #110c13, #101010, #181818, #1f1f1f, #262626, #2e2e2e) !important;
+}
+.text {
+     background: rgba(255, 255, 255, 0.555);
+     color: #000;
+     font-size: 25px;
+     font-weight: bold;
+}
+
+.text:hover {
+     font-size: 28px;
+}
+
+.text2 {
+     font-size: 25px;
+     font-weight: bold;
+}
+.a{
+     transition: 0.4s ease-in-out !important;
+}
+.a:hover {
+     transform: scaleY(100%) !important;
+     color: gold !important;
+     font-size: 26px !important;
+}
+
+#text::selection{
+     color: black !important;
+     background-color: gold !important;
+}
+
+.a:focus {
+     color: gold !important;
+     font-size: 26px !important;
+}
+.active{
+     font-size: 1.6rem !important;
+}
+
+.card-text {
+     display: none;
+}
+.card-text::selection{
+     color: black !important;
+     background-color: gold !important;
+}
+
+.card a{
+     display: none !important;
+}
+.card {
+     border-radius: 4px;
+     background: #fff;
+     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+     margin: 10px;
+     transition: .5s ease-in-out;
+}
+
+.card:hover {
+     font-weight: bolder !important;
+     color: white;
+     background-image: linear-gradient(to right top, #001253, #1f093e, #24042b, #22021c, #1a0010, #150713, #110c13, #101010, #181818, #1f1f1f, #262626, #2e2e2e);
+     cursor: pointer;
+     transform: scale(1.05);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+     font-weight: bold;
+     transform: scaleY(100%);
+}
+
+.card:hover .card-text {
+     -webkit-animation: fade-in 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+     animation: fade-in 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+     display: block;
+     color: rgb(255, 217, 0);
+     
+     border-radius: 10px;
+}
+.card:hover a{
+     font-weight: bold;
+     -webkit-animation: fade-in 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+     animation: fade-in 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+     display: inline !important; 
+}
+
+.cards {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+.cards2 {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+.cards3 {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+.cards4{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+.b:hover {
+     color: gold !important;
+     font-weight: bold !important;
+}
+
+.b:active {
+     color: black !important;
+     background-color: gold !important;
+}
+
+.activedrop {
+     color: white !important;
+     font-weight: bold !important;
+}
+
+nav a {
+     position: relative;
+}
+
+nav a:before {
+     position: absolute;
+     content: '';
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     transform: scaleX(0);
+     transform-origin: right;
+     transition: transform .4s linear;
+}
+
+ul a:hover:before {
+     transform: scaleX(1);
+     transform-origin: left;
+}
+
+.logo {
+     -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+     animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-in-right {
+     0% {
+          -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+          opacity: 0;
+     }
+     100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+     }
+}
+
+@keyframes slide-in-right {
+     0% {
+          -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+          opacity: 0;
+     }
+     100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+     }
+}
+
+@-webkit-keyframes slide-in-left {
+     0% {
+          -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+          opacity: 0;
+     }
+     100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+     }
+}
+
+@keyframes slide-in-left {
+     0% {
+          -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+          opacity: 0;
+     }
+     100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+     }
+}
+
+@-webkit-keyframes fade-in {
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+}
+
+@keyframes fade-in {
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+}
+
+
+
+
+/*........About......PAGE..............CSS............*/
+
+.about{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     background: #649173;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.aboutText{
+     height: 100%;
+
+     background: #649173;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+     width: 50%;
+
+}
+.mainPic{
+     height: 100%;
+     width: 50%;
+}
+#pic{
+     width: 100%;
+     height: 100%;
+}
+.aboutText h1 {
+     margin-top: 10%;
+}
+.myname{
+     color: black;
+}
+.aboutText ul{
+     list-style: none;
+}
+.aboutText a {
+     position: relative;
+     color: black;
+     text-decoration: none;
+}
+.aboutText a::before{
+     position: absolute;
+     content: '';
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 3px;
+     width: 100%;
+     background-color: gold;
+     transform: scaleX(0);
+     transform-origin: right;
+     transition: transform .4s linear;
+}
+.aboutText li {
+     margin: 5px;
+}
+.aboutText a:hover{
+     color: #000;
+}
+.aboutText a:hover:before{
+   
+     transform: scaleX(1);
+     transform-origin: left;
+  
+}
+
+
+
+
+
+
+/*...................CONTACT.........PAGE.........CSS..............*/
+
+.container-fluid{
+     background-image: linear-gradient(to right top, #001253, #1f093e, #24042b, #22021c, #1a0010, #150713, #110c13, #101010, #181818, #1f1f1f, #262626, #2e2e2e);
+}
+.contact{
+     height: 90vh;
+     align-items: center;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+.link:before{
+     position: absolute;
+     content: '';
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 3px;
+     width: 100%;
+     background-color: rgb(255, 255, 255);
+     transform: scaleX(0);
+     transform-origin: right;
+     transition: transform .4s linear;
+}
+.link:hover::before{
+     transform: scaleX(1);
+     transform-origin: left;
+  
+}
+.link{
+     font-weight: bold;
+     position: relative;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+}
+.link:hover{
+     color: gold;
+}
+
+.fa-facebook:hover{
+     fill: white !important;
+     color: #4267B2;
+}
+.fa-envelope:hover{
+     color: silver;
+}
+.fa-phone:hover{
+color: blue;
+}
+.fa-whatsapp:hover{
+color: chartreuse !important;
+}
+
+
+
+.loc{
+     background-image: url(images/Contact/gold.png);
+    -webkit-background-clip: text;
+     color: transparent;
+     font-weight: bolder;
+
+}
+.loc2{
+     background-image: url(images/Contact/gold.png);
+    -webkit-background-clip: text;
+     color: transparent;
+     font-weight: bolder;
+}
+.embed-responsive-item{
+     width: 100%;
+     height: 20vh;
+}
+
+
+
+
+/*..........MACHINE..........PAGE...............CSS*/
+
+
+.machine{
+     overflow: hidden;
+     width: 100%;
+    background-image: linear-gradient(to right top, #001253, #1f093e, #24042b, #22021c, #1a0010, #150713, #110c13, #101010, #181818, #1f1f1f, #262626, #2e2e2e);;
+     height: 100vh;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+}
+.machineimg{
+     width: 50%;
+}     
+#machineimg{
+     width: 100%;
+}
+.sideText{
+     width: 50%;
+}
+.someText{
+
+     background-image: url(images/Contact/gold.png);
+    -webkit-background-clip: text;
+     color: transparent;
+     font-weight: bolder;
+}
+.somelink{
+   
+     text-decoration: none !important;
+     font-size: 1rem;
+    
+}
+.somelink > a {
+     transition: 0.5s ease-in-out;
+     color: gold !important;
+     font-weight: bolder !important;
+     text-decoration: none !important;
+}
+
+.somelink > a:hover{
+     color: white !important;
+     font-size:1.5rem;
+     transform: scale(100%);
+}
+
+
+
+
+/* ....................MEDIA QUERIES...................... */
+
+
+
+@media only screen and (max-width: 991px) {
+     .navbar-nav {
+          z-index: 1;
+          -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+     }
+     .card-text {
+          display: block;
+     }
+     .card a{
+          display:inline !important;
+     }
+}
+@media only screen and (max-width: 1024px){
+     .card-text {
+          display: block;
+     }
+     .card a{
+          display:inline !important;
+     }
+} 
+@media only screen and (max-height: 850px){
+     
+     .about{
+          
+          background: #649173;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          display: block;
+     }
+     .mainPic{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 50%;
+     }
+
+     #pic{
+          margin-top: 2%;
+          width: 50%;
+     }
+     .aboutText{
+          margin-top: -2%;
+          width: 100%;
+          height: auto;
+     }
+     li img {
+          width: 80px;
+     }
+     .fa-facebook{
+          color: #4267B2 ;
+     }
+     .fa-facebook:hover{
+          color: #0055ff;
+     }
+     .fa-envelope{
+          color: silver;
+     }
+     .fa-envelope:hover{
+          color: azure;
+     }
+     .fa-phone{
+     color: blue;
+     }
+
+     .fa-phone:hover{
+          color: skyblue;
+     }
+
+     .fa-whatsapp{
+     color:lime ;
+     }
+     .fa-whatsapp:hover{
+          color: rgb(169, 255, 169) !important;
+     }
+    
+}
+
+
+@media only screen and (max-width: 1285px){
+.embed-responsive{
+     width: 500px;
+}
+
+
+}
+@media only screen and (max-width: 475px){
+     .about{
+          background: #649173;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          display: block;
+     }
+     .mainPic{
+          margin-top: -2%;
+          width: 100%;
+          height: 50%;
+     }
+
+     #pic{
+          width: 100%;
+          height: 100%;
+     }
+     .aboutText{
+          width: 100%;
+          height: auto;
+     }
+     li img {
+          width: 80px;
+     }
+     .embed-responsive{
+          width: 100%;
+     }
+     .embed-responsive-item{
+          width: 100%;
+     }
+}
+
+@media only screen and (max-width: 600px){
+     .machine{
+          display: block !important;
+     }
+     .machineimg{
+          width: 100%;
+     }     
+     #machineimg{
+          margin: 0 auto;
+          
+          height: 40vh;
+     }
+     .sideText{
+          width: 100%;
+     }
+}
+
+/* .................................................. */
+.dev{
+     text-align: center;
+}
+.footerText{
+     color: rgba(0, 0, 0, 0.383);
+}
+#dev{
+     opacity: 0.5;
+}
